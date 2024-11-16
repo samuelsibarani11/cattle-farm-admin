@@ -1,16 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Breadcrumb from '../../components/Breadcrumbs/Breadcrumb';
 import LogoDark from '../../images/logo/logo-dark.svg';
 import Logo from '../../images/logo/logo.svg';
-
-const SignUp: React.FC = () => {
+interface SignUpProps {
+  onSignUp: () => void;
+}
+const SignUp: React.FC<SignUpProps> = ({onSignUp}) => {
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    onSignUp();
+  };
+  
+  
   return (
     <>
-      <Breadcrumb pageName="Sign Up" />
-
-      <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
-        <div className="flex flex-wrap items-center">
+      <div className="min-h-screen bg-white dark:bg-boxdark">
+      <div className="flex min-h-screen items-center justify-center">
+        <div className="flex w-full max-w-[1400px] flex-wrap items-center justify-center">
           <div className="hidden w-full xl:block xl:w-1/2">
             <div className="py-17.5 px-26 text-center">
               <Link className="mb-5.5 inline-block" to="/">
@@ -154,7 +160,7 @@ const SignUp: React.FC = () => {
                 Sign Up to TailAdmin
               </h2>
 
-              <form>
+              <form onSubmit={handleSubmit}>
                 <div className="mb-4">
                   <label className="mb-2.5 block font-medium text-black dark:text-white">
                     Name
@@ -348,6 +354,7 @@ const SignUp: React.FC = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </>
   );
