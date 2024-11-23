@@ -54,7 +54,7 @@ function App() {
             path="/auth/signin"
             element={
               <>
-                <PageTitle title="Signin | Cattle Farm" />
+                <PageTitle title="Signin | Padi Deteksi" />
                 <SignIn onSignIn={handleSignIn} />
               </>
             }
@@ -63,7 +63,7 @@ function App() {
             path="/auth/signup"
             element={
               <>
-                <PageTitle title="Signup | Cattle Farm" />
+                <PageTitle title="Signup | Padi Deteksi" />
                 <SignUp onSignUp={handleSignUp}/>
               </>
             }
@@ -80,7 +80,7 @@ function App() {
                 index
                 element={
                   <>
-                    <PageTitle title="Dashboard | Cattle Farm" />
+                    <PageTitle title="Dashboard | Padi Deteksi" />
                     <ECommerce />
                   </>
                 }
@@ -89,7 +89,7 @@ function App() {
                 path="/calendar"
                 element={
                   <>
-                    <PageTitle title="Calendar | Cattle Farm" />
+                    <PageTitle title="Calendar | Padi Deteksi" />
                     <Calendar />
                   </>
                 }
@@ -98,7 +98,7 @@ function App() {
                 path="/profile"
                 element={
                   <>
-                    <PageTitle title="Profile | Cattle Farm" />
+                    <PageTitle title="Profile | Padi Deteksi" />
                     <Profile />
                   </>
                 }
@@ -107,7 +107,7 @@ function App() {
                 path="/forms/form-elements"
                 element={
                   <>
-                    <PageTitle title="Form Elements | Cattle Farm" />
+                    <PageTitle title="Form Elements | Padi Deteksi" />
                     <FormElements />
                   </>
                 }
@@ -116,7 +116,7 @@ function App() {
                 path="/forms/form-layout"
                 element={
                   <>
-                    <PageTitle title="Form Layout | Cattle Farm" />
+                    <PageTitle title="Form Layout | Padi Deteksi" />
                     <FormLayout />
                   </>
                 }
@@ -125,7 +125,7 @@ function App() {
                 path="/tables"
                 element={
                   <>
-                    <PageTitle title="Tables | Cattle Farm" />
+                    <PageTitle title="Tables | Padi Deteksi" />
                     <Tables />
                   </>
                 }
@@ -134,7 +134,7 @@ function App() {
                 path="/settings"
                 element={
                   <>
-                    <PageTitle title="Settings | Cattle Farm" />
+                    <PageTitle title="Settings | Padi Deteksi" />
                     <Settings />
                   </>
                 }
@@ -143,7 +143,7 @@ function App() {
                 path="/chart"
                 element={
                   <>
-                    <PageTitle title="Basic Chart | Cattle Farm" />
+                    <PageTitle title="Basic Chart | Padi Deteksi" />
                     <Chart />
                   </>
                 }
@@ -152,7 +152,7 @@ function App() {
                 path="/ui/alerts"
                 element={
                   <>
-                    <PageTitle title="Alerts | Cattle Farm" />
+                    <PageTitle title="Alerts | Padi Deteksi" />
                     <Alerts />
                   </>
                 }
@@ -161,7 +161,7 @@ function App() {
                 path="/ui/buttons"
                 element={
                   <>
-                    <PageTitle title="Buttons | Cattle Farm" />
+                    <PageTitle title="Buttons | Padi Deteksi" />
                     <Buttons />
                   </>
                 }
