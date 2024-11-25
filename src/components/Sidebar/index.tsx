@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import SidebarLinkGroup from './SidebarLinkGroup';
-import Logo from '../../images/logo/cattle-farm-logo.png';
+import Logo from '../../images/logo/padi-deteksi.png';
 
 interface SidebarProps {
   sidebarOpen: boolean;
@@ -66,7 +66,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
         <NavLink to="/">
           <div className='flex items-center justify-between'>
             <img src={Logo} alt="Logo" width={80} height={50} />
-            <p className='text-2xl text-white font-bold'>Cattle Farm</p>
+            <p className='text-2xl text-white font-bold'>Padi Deteksi</p>
           </div>
         </NavLink>
 
